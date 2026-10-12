@@ -31,13 +31,20 @@ v.txt
 # ===== 测试运行输出 =====
 *.txt
 !开发/requirements.txt
-!开发/uia_probe_tool/README.txt
 **/smoke_*.txt
 **/v121_exit.txt
 
 # ===== 测试子目录归档与临时文件 =====
 **/archive*/
 **/temp/
+
+# ===== 无关工具 / 独立测试（不入库）=====
+开发/sleep_guard/
+开发/auto_close_probe/
+开发/uia_probe_tool/
+开发/test_auto_close/
+开发/test_parallel_refresh/
+开发/test_refresh_filter/
 
 # ===== 停用模块 =====
 mods_off/
