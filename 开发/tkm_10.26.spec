@@ -8,7 +8,7 @@ binaries = []
 hiddenimports = ['platformdirs', 'pystray']
 # v10.7.7 修复（拔除僵尸 OCR）：v10.7.4 起 spec 内嵌整个开发\mods，把 ocr_recog 及
 # example_mod 一起打进 exe（OCR 依赖已在 excludes 排除，但僵尸 mod 仍被 load_mods 加载）。
-# v10.7.7 起只内嵌 uia_recog + ai_debug 两个目录（load_mods frozen 下从 _MEIPASS/mods 加载），
+# v10.7.7 起只内嵌 uia_recog，load_mods frozen 下从 _MEIPASS/mods 加载，
 # 部署版不再携带 ocr_recog/example_mod；excludes 继续排除 rapidocr_onnxruntime/onnxruntime/cv2。
 # v10.7.8：结构化拾取断链修复（详见主程序文件头），spec 仅同步版本号。
 # v10.7.9：筛选刷新（filter_refresh）不生效修复 + 失败日志增强（详见主程序文件头），spec 仅同步版本号。
@@ -34,7 +34,7 @@ hiddenimports = ['platformdirs', 'pystray']
 # ④.6 OCR 引擎下拉、_get_recog OCR fallback、_pil_diff_norm/image_similarity/ImageChops、
 # change_detect_* 配置与 UI/回填/save_change_detect/_capture_change_frame/_monitor_round 跳轮块、
 # _last_frames），识别规则板块常驻、按钮固定"测试识别"；ocr_recog mod 移出 mods 至 mods_off，
-# ai_debug 白名单移除 ocr_engine/change_detect 键；spec 仍只内嵌 uia_recog+ai_debug，excludes 不变。
+# spec 只内嵌 uia_recog，excludes 不变。
 # v10.9：打包推送——告警合并窗口（push_batch_minutes 默认30分钟），多轮告警攒成一条推送省日额度；
 # 手动识别/快捷键刷新不走推送（push=False，推送仅离席告警用）；spec 仅同步版本号。
 # v10.9.1：告警轻滴声——自动监控命中告警用 winsound 播放很轻短滴声（880Hz/0.12s），不占视线；
@@ -48,7 +48,6 @@ hiddenimports = ['platformdirs', 'pystray']
 # 改 False（默认关 toast，面板开关保留），sound_alarm 保持 True；声音按告警类型区分：正常=880/120
 # 轻滴声、不好=220Hz 低沉长音、加预算=1300Hz 双连明亮音；spec 仅同步版本号。
 datas += [('D:\\Program Files of mine\\TikTok监控器\\开发\\mods\\uia_recog', 'mods/uia_recog')]
-datas += [('D:\\Program Files of mine\\TikTok监控器\\开发\\mods\\ai_debug', 'mods/ai_debug')]
 tmp_ret = collect_all('platformdirs')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 tmp_ret = collect_all('uiautomation')
