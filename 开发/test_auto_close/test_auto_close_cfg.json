@@ -1,0 +1,7 @@
+{
+  "说明": "双击 test_auto_close.exe 即按本配置运行，改完保存再双击即可，无需命令行参数。mode: close=暂停投放中的计划 / open=启用已暂停的计划；plan_keyword: 填目标计划名称中的一段文字即可（留空且 dry_run=false 时不会真点，防误操作）；dry_run: true=只扫描不点击；auto_confirm: true=自动点击弹窗确认按钮",
+  "mode": "close",
+  "plan_keyword": "",
+  "dry_run": false,
+  "auto_confirm": true
+}

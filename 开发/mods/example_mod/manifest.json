@@ -1,0 +1,8 @@
+{
+  "id": "example_mod",
+  "name": "示例 Mod",
+  "version": "1.0.0",
+  "entry": "mod.py",
+  "enabled": true,
+  "description": "验证 Mod 加载链路的最小示例：加载时输出日志并注册一个示例板块"
+}

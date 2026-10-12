@@ -1,0 +1,8 @@
+{
+  "id": "ai_debug",
+  "name": "AI调试",
+  "version": "1.0.0",
+  "entry": "mod.py",
+  "enabled": true,
+  "description": "AI/Marvis 调试控制接口：本地 HTTP 服务（仅 127.0.0.1），提供状态读取、配置修改、手动识别、关闭广告占位等 REST 接口，不模拟鼠标键盘"
+}

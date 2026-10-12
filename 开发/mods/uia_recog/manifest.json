@@ -1,0 +1,8 @@
+{
+  "id": "uia_recog",
+  "name": "控件树识别器",
+  "version": "1.0.0",
+  "entry": "mod.py",
+  "enabled": true,
+  "description": "模式二识别器：读取目标窗口 UIA 控件树（含 Chromium 渲染子窗口下钻、ValuePattern 兜底、滚动收集），CDP 端口可用时 DOM 文本兜底，产出与 OCR 兼容的 (text, words) 结构。依赖 uiautomation/websocket 由主 exe 打包。"
+}
