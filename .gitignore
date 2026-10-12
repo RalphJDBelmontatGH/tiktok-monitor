@@ -1,4 +1,4 @@
-# ===== 部署产物 / 旧归档 / 辅助工具（不入库） =====
+# ===== 部署 / 归档 / 辅助工具（不入库）=====
 部署/
 归档/
 探测工具/
@@ -7,8 +7,9 @@
 **/dist/
 build/
 *.exe
+*.png
 
-# ===== 运行数据 / 本地配置（含真实凭据，严禁入库） =====
+# ===== 运行数据 / 本地配置（含真实凭据，严禁入库）=====
 config.json
 **/config.json
 state.json
@@ -17,29 +18,22 @@ state.json
 *.log
 **/plan_archive*.json
 **/weiyun_upload_state.json
+**/port.txt
+**/_ver_err.txt
+**/_ver_out.txt
+v.txt
 
-# ===== 内部文档（含店铺代号 / 内部策略 / 交接信息） =====
-00_项目说明书.md
-会话交接*.md
-**/会话交接*.md
-项目状态交接*.md
-**/项目状态交接*.md
-决策日志*.md
-**/决策日志*.md
-方案_*.md
-**/方案_*.md
-触发路径核对表*.md
-**/触发路径核对表*.md
-速查卡*.md
-**/速查卡*.md
-工程探查记录.md
-**/工程探查记录.md
-as-is_*.md
-**/as-is_*.md
+# ===== 内部文档：git 只保留源码 + README =====
+**/*.md
+!README.md
+**/docs/
 
 # ===== 测试运行输出 =====
 *.txt
+!开发/requirements.txt
 !开发/uia_probe_tool/README.txt
+**/smoke_*.txt
+**/v121_exit.txt
 
 # ===== 测试子目录归档与临时文件 =====
 **/archive*/
@@ -47,7 +41,3 @@ as-is_*.md
 
 # ===== 停用模块 =====
 mods_off/
-
-# ===== 内部设计文档（仅保留 README / CHANGELOG） =====
-开发/test_auto_close/设计文档.md
-开发/test_auto_close/识别规则整理_*.md
