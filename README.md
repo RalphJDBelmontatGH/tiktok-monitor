@@ -12,8 +12,7 @@
 | 路径 | 说明 |
 |------|------|
 | `开发/` | 源码（主程序、模块、打包 spec、文档） |
-| `开发/main.py` | 主程序入口（GUI + 采集 + 规则 + 告警） |
-| `开发/tiktok_monitor_v10.pyw` | v10 主程序 |
+| `开发/tiktok_monitor_v10.pyw` | v10 主程序（入口） |
 | `开发/mods/` | 插件模块（uia_recog 识别、example_mod 示例） |
 | `开发/docs/` | 变更日志等文档 |
 
